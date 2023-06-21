@@ -108,4 +108,73 @@ console.log(palavras);
 
 let produtos = "Banana;Maçã;Jaca;Pera;Bola;Tapete";
 
-console.log(produtos.split(';'));
+console.log(produtos.split(";"));
+
+let onibus = {
+  rodas: 8,
+  passageiros: 40,
+  portas: 2,
+};
+
+console.log(onibus);
+
+onibus.janela = 20;
+
+delete onibus.rodas;
+
+console.log(onibus.janela);
+
+let nomes2 = ["João", "John", "Júlio", "Marcel", "César"];
+
+if (nomes2.includes("John")) {
+  console.log("Achou");
+}
+
+let numeros2 = [1, 2, 3, 4];
+
+function verificaElementosArray(arr) {
+  if (arr.length >= 5) {
+    console.log("muitos elementos");
+  } else {
+    console.log("poucos elementos");
+  }
+}
+
+verificaElementosArray(nomes2);
+verificaElementosArray(numeros2);
+
+let pessoaJson = {
+  nome: "John",
+  idade: 32,
+};
+
+console.log(pessoaJson.nome);
+console.log(pessoaJson.idade);
+
+let frase2 = "teste de frase para montar um array";
+
+let palavras2 = frase2.split(" ");
+
+for (let i = 0; i < palavras2.length; i++) {
+  console.log(palavras[i]);
+}
+
+const calculadora = {
+  soma: function (a, b) {
+    return a + b;
+  },
+  subtrai: function (a, b) {
+    return a - b;
+  },
+  multiplica: function (a, b) {
+    return a * b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+};
+
+console.log(calculadora.soma(2, 1));
+console.log(calculadora.subtrai(2, 1));
+console.log(calculadora.multiplica(2, 1));
+console.log(calculadora.divide(2, 1));
